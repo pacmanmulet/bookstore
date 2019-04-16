@@ -4,25 +4,92 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
 }
 
+.App-intro {
+  font-size: large;
+}
+main {
+  margin-top: 20px;
+}
+.clikable {
+  cursor: pointer;
+}
+
+.table td {
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+  vertical-align: middle !important;
+}
+.thumbnail {
+  height: 2em;
+}
+.badge {
+  font-size: 55% !important;
+  transition: transform 0.4s;
+}
+.animate .badge {
+  transition: all 0.4s;
+  background-color: rgb(19, 187, 19);
+  transform: translate(0px, -5px);
+}
+.animate svg {
+  transition: all 0.4s;
+  transform: scale(1.2, 1.2);
+  color: rgb(19, 187, 19);
+}
+svg {
+  transition: all 0.4s;
+}
+.categoriesList {
+  border: none;
+  list-style: none;
+  color: white;
+  padding: 0;
+  text-align: center;
+}
+.categoriesList li {
+  border: none;
+  background-color: #00a;
+  border-radius: 0.5em;
+  list-style: none;
+}
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  overflow-y: auto;
+  padding-left: 0;
+  max-height: 300px;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestions li:hover {
+  background-color: #00a;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
